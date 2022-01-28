@@ -8,7 +8,7 @@ import Pricing from './components/Pricing';
 export default () => {
     return (<div> 
         <StylesProvider>
-            <BrowserRouter>
+            <BrowserRouter> 
                 <Route exact path="/pricing" component={Pricing} />
                 <Route path="/" component={Landing} />
             </BrowserRouter>
