@@ -1,11 +1,16 @@
-import React, { useEffect, useRef } from  'react';
+import React, { useEffect, useRef } from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import MarketingApp from './components/MarketingApp';
+import Header from './components/header';
 
-export default () =>  {
-    
-    return <div>
-            <h1>Hi there!!!</h1>
-            <hr/>
-            <MarketingApp/>
-        </div>
-} 
+export default () => {
+
+    return (
+        <BrowserRouter>
+            <div>
+                <Header />
+                <MarketingApp />
+            </div>
+        </BrowserRouter>
+    )
+}
